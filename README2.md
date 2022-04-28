@@ -3,7 +3,7 @@
 ## 1.Parte 1. Investigación
 Crea una presentación de bootstrap que solvente las siguientes cuestiones:
 
-* ¿Hay muchos tipos de diseños en Bootstrap? Si los hay, explícalos
+### ¿Hay muchos tipos de diseños en Bootstrap? Si los hay, explícalos
 
 Tipos de diseño se puede entender de distintos modos.
 
@@ -11,7 +11,7 @@ Tipos de diseño se puede entender de distintos modos.
     * Diseño mobile-first o desktop-first. En principio, Bootstrap está diseñado como mobile-first, de forma que su carga en móviles sea algo más eficiente.
 
 
-* ¿Cuáles son los diferentes tipos de botones en bootstrap? Pon ejemplos.
+### ¿Cuáles son los diferentes tipos de botones en bootstrap? Pon ejemplos.
 
 https://getbootstrap.com/docs/5.1/components/buttons/
 
@@ -33,7 +33,7 @@ El tamaño de los botones se puede ajustar con las clases `btn-lg` (botón grand
 Los botones también tienen un color más claro en caso de estar deshabilitados.
 
 
-* ¿Que es un Carousel de bootstrap? Pon un ejemplo
+### ¿Que es un Carousel de bootstrap? Pon un ejemplo
 
 https://getbootstrap.com/docs/5.1/components/carousel/
 
@@ -42,23 +42,23 @@ Los elementos habitualmente incluyen imágenes y/o texto.
 
 
 
-* ¿Que es un spinner de bootstrap? Pon un ejemplo
+### ¿Que es un spinner de bootstrap? Pon un ejemplo
 
 
-* ¿Que es un navBar de bootstrap? Pon un ejemplo
+### ¿Que es un navBar de bootstrap? Pon un ejemplo
 
 
-* ¿Que es un modal de bootstrap? Pon un ejemplo
+### ¿Que es un modal de bootstrap? Pon un ejemplo
 
 
-* Existen inputs para subir archivos en Bootstrap? Pon un ejemplo
+### Existen inputs para subir archivos en Bootstrap? Pon un ejemplo
 
 
-* ¿Qué es un plugin scrollspy en Bootstrap?Pon un ejemplo
+### ¿Qué es un plugin scrollspy en Bootstrap?Pon un ejemplo
 
 
 
-* Extra
-* Implementa nuevos puntos sobre bootstrap que hayas descubierto durante tu investigación y creas que son importantes
+### Extra
+### Implementa nuevos puntos sobre bootstrap que hayas descubierto durante tu investigación y creas que son importantes
 
 
