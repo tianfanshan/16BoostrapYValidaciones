@@ -22,7 +22,7 @@ Los botones pueden usar los colores predefinidos como `primary, secondary, succe
 ```
 <button type="button" class="btn btn-primary">Primary</button>
 ```
-![/assets/imgs/bs-buttons.png]
+![BS buttons](/assets/imgs/bs-buttons.png)
 
 La clase `btn` y las demás, se puede aplicar a distintos tipos de elementos, como `button, a, input`.
 
