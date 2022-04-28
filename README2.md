@@ -111,6 +111,45 @@ Ejemplo de: https://www.w3schools.com/bootstrap5/bootstrap_navbar.php
 
 
 ### ¿Que es un modal de bootstrap? Pon un ejemplo
+https://getbootstrap.com/docs/5.1/components/modal/
+
+
+Un modal es un componente de BS que muestra una ventana por encima del contenido de la página. Se utiliza para presentar información, texto, imágenes, opciones y hasta formularios.
+Las ventanas modal no permiten la interacción con los otros elementos de la página mientras se están mostrando. Pueden, por ejemplo, desaparecer si se hace clic fuera de ellas, o bien impedir que se realice ninguna acción hasta que se cierre la ventana (con botónes específicos para cerrrarla).
+
+Ejemplo de:
+https://www.w3schools.com/bootstrap5/bootstrap_modal.php
+```
+<!-- Button to Open the Modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+  Open modal
+</button>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Modal body..
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+```
 
 
 ### Existen inputs para subir archivos en Bootstrap? Pon un ejemplo
