@@ -10,16 +10,20 @@
 // Constants
 const navBtnForm = document.querySelector('#nav-btn-form');
 const navBtnList = document.querySelector('#nav-btn-list');
+const sectForm = document.querySelector('#form');
+const sectList = document.querySelector('#list');
 
 ////////////////////////////////////////////////////////////////////////////////
 // Functions
 
 const showForm = () => {
-    console.log("TODO: Show the form section");
+    sectForm.classList.remove('d-none');
+    sectList.classList.add('d-none');
 };
 
 const showList = () => {
-    console.log("TODO: Show the users list section");
+    sectForm.classList.add('d-none');
+    sectList.classList.remove('d-none');
 };
 
 ////////////////////////////////////////////////////////////////////////////////
