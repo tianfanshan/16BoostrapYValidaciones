@@ -40,10 +40,38 @@ https://getbootstrap.com/docs/5.1/components/carousel/
 Un carrusel es un componente de BS con una serie de elementos que van apareciendo formando un ciclo. Se usa (o mejor, se usaba) a menudo como primer elemento visual en las webs, aunque las últimas tendencias tienen a eliminarlo por su escasa utilidad.
 Los elementos habitualmente incluyen imágenes y/o texto.
 
+```
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+```
 
 
 ### ¿Que es un spinner de bootstrap? Pon un ejemplo
+Un spinner es un componente de BS usado para indicarle al usuario/a que se está realizando algún proceso internamente y que debe esperar.
+Existen dos tipos de spinners en BS, los border spinner, que giran sobre sí mismos, y los growing spinner.
+Se pueden cambiar los colores y los tamaños.
 
+Ejemplos:
+![BS border spinners](./assets/imgs/bs-spin1.gif) ![BS growing spinners](./assets/imgs/bs-spin2.gif)
+
+Se pueden añadir detalles para los lectores de pantalla que ayudan a personas con limitaciones de visión:
+
+```
+<div class="spinner-border" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+```
 
 ### ¿Que es un navBar de bootstrap? Pon un ejemplo
 
