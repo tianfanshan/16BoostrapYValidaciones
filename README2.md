@@ -63,6 +63,7 @@ Existen dos tipos de spinners en BS, los border spinner, que giran sobre sí mis
 Se pueden cambiar los colores y los tamaños.
 
 Ejemplos:
+
 ![BS border spinners](./assets/imgs/bs-spin1.gif) ![BS growing spinners](./assets/imgs/bs-spin2.gif)
 
 Se pueden añadir detalles para los lectores de pantalla que ayudan a personas con limitaciones de visión:
@@ -73,7 +74,40 @@ Se pueden añadir detalles para los lectores de pantalla que ayudan a personas c
 </div>
 ```
 
+
 ### ¿Que es un navBar de bootstrap? Pon un ejemplo
+https://getbootstrap.com/docs/5.1/components/navbar/
+
+Los navBar son barras de navegación, como se encuentran frecuentemente en las webs con diversidad de contenido. Incluyen botones para acceder a las distintas partes de la web.
+También pueden incluir un logo o nombre y botones desplegables con más opciones (incluso desplegables anidados).
+
+Las barras de navegación suelen fijarse a la parte superior de la pantalla (aunque a veces se encuentran en la parte inferior), y en pantallas pequeñas suelen esconder sus botones y mostrar solo un botón de tipo hamburguesa para desplegarlas.
+
+![BS navBar](./assets/imgs/bs-navbar.png)
+
+Ejemplo de: https://www.w3schools.com/bootstrap5/bootstrap_navbar.php
+
+```
+ <!-- A grey horizontal navbar that becomes vertical on small screens -->
+<nav class="navbar navbar-expand-sm bg-light">
+
+  <div class="container-fluid">
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 3</a>
+      </li>
+    </ul>
+  </div>
+
+</nav>
+```
 
 
 ### ¿Que es un modal de bootstrap? Pon un ejemplo
