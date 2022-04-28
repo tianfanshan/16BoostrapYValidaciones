@@ -153,10 +153,30 @@ https://www.w3schools.com/bootstrap5/bootstrap_modal.php
 
 
 ### Existen inputs para subir archivos en Bootstrap? Pon un ejemplo
+https://getbootstrap.com/docs/5.1/forms/form-control/#file-input
+
+En HTML existe un tipo de input para subir archivos: `<input type="file" ...>`, que, por defecto, ocupa un espacio muy distinto según navegadores y lenguas utilizadas.
+
+BS permite formatear de forma elegante los inputs para cargar archivos de distintos tipos.
+
+![BS file input](./assets/imgs/bs-file-input.png)
+
+```
+<div class="mb-3">
+  <label for="formFile" class="form-label">Default file input example</label>
+  <input class="form-control" type="file" id="formFile">
+</div>
+```
 
 
-### ¿Qué es un plugin scrollspy en Bootstrap?Pon un ejemplo
+### ¿Qué es un plugin scrollspy en Bootstrap? Pon un ejemplo
+https://getbootstrap.com/docs/5.1/components/scrollspy/
 
+El "scrollspy" permite "espiar" el scroll que el usuario hace sobre el contenido de la página, para que se active en la barra de navegación (u otro conjunto de botones) el botón que corresponde al contenido mostrado en ese momento en pantalla.
+
+Los botones activos en una barra de navegación suelen estar destacados con un color más brillante, un borde o un fondo distinto a los botones situados a su lado.
+
+![BS scrollspy](./assets/imgs/bs-scrollspy.gif)
 
 
 ### Extra
