@@ -1,10 +1,12 @@
 'use strict';
+////////////////////////////////////////////////////////////////////////////////
 /**
  * Exercise Bootstrap and Validation
  *      for     The Bridge
  *      by      Shan & Xavi
  * 2022-04-28
  */
+
 
 ////////////////////////////////////////////////////////////////////////////////
 // Constants
@@ -33,6 +35,7 @@ const showForm = () => {
     sectList.classList.add('d-none');
 };
 
+
 /**
  * Hides Form section and shows List section.
  * It uses bootstrap class 'd-none' to hide the section.
@@ -42,6 +45,7 @@ const showList = () => {
     sectForm.classList.add('d-none');
     sectList.classList.remove('d-none');
 };
+
 
 /**
  * Saves a new user with form data after checking validity.
@@ -78,6 +82,8 @@ const saveNewUser = (ev) => {
     }
 }
 
+
+
 // Util functions //////////////////////////////////////////////////////////////
 
 /**
@@ -96,6 +102,7 @@ const getFormData = () => {
     // Return an object with shorthand propertie names
     return {name, email, password1, password2};
 };
+
 
 /**
  * Create a new element for the alert and put it in the alert box with a delay.
@@ -121,6 +128,7 @@ const showAlert = (text, plusDelay=0, kind='danger') => {
     setTimeout(()=>{newAlert.remove()}, 3000+plusDelay);
 }
 
+
 // Validation functions ////////////////////////////////////////////////////////
 
 /**
@@ -133,12 +141,14 @@ const noneIsEmpty = (txt1, txt2, txt3, txt4) => {
 // Another (more advanced) version of the 'noneIsEmpty' function:
 // const noneIsEmpty = (...fields) => fields.every(elem => elem.trim() !== "");
 
+
 /**
  * Check if the string complies with the regexp expression (is a valid email).
  * @param email String to check
  * @returns     true or false, if email is valid or not
  */
 const isEmailValid = (email) => /^[\w-\.]+@([\w-]+\.)+[\w-]{2,}$/.test(email);
+
 
 /**
  * Check if password complies some conditions
@@ -153,6 +163,7 @@ const isPasswordValid = (password) => {
     //     Minimum eight in length .{4,} (with the anchors)
     return /^(?=.*?[A-Z])(?=.*?[a-z]).{4,}$/.test(password);
 };
+
 
 /**
  * Check four validations. Store errors, if any. Show errors if any.
@@ -209,6 +220,8 @@ const validateFormData = () => {
 navBtnForm.addEventListener('click', showForm);
 navBtnList.addEventListener('click', showList);
 btnNewUser.addEventListener('click', saveNewUser);
+
+
 
 ////////////////////////////////////////////////////////////////////////////////
 // Init
