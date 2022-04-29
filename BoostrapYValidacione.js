@@ -21,10 +21,11 @@ const formPassword1 = document.getElementById('password1')
 const formPassword2 = document.getElementById('password2')
 const btnNewUser = document.getElementById('btn-new-user')
 const alertBox = document.querySelector('#alert-box');
+const usersList = document.getElementById('users-list');
 
 
 ////////////////////////////////////////////////////////////////////////////////
-// Functions
+// System Functions
 /**
  * Hides List section and shows Form section.
  * It uses bootstrap class 'd-none' to hide the section.
@@ -42,6 +43,7 @@ const showForm = () => {
  * Adds/removes the class to/from the section as appropriate
  */
 const showList = () => {
+    showUsersList();
     sectForm.classList.add('d-none');
     sectList.classList.remove('d-none');
 };
@@ -83,6 +85,25 @@ const saveNewUser = (ev) => {
 }
 
 
+const showUsersList = () => {
+    // 1. Delete current list
+    usersList.innerHTML = '';
+
+    // 2. Get and parse data from localStorage
+    let database = JSON.parse(localStorage.getItem('bs_users')) || [];
+
+    // 3. Loop over database to show every user
+    for (const user of database) {
+
+        usersList.innerHTML += `
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">${user.name}</h5>
+            <p class="card-text">${user.email}</p>
+          </div>
+        </div>`;
+    }
+};
 
 // Util functions //////////////////////////////////////////////////////////////
 
