@@ -143,7 +143,7 @@ const showAlert = (text, plusDelay = 0, kind = 'danger') => {
     //  of alert.
     newAlert.classList.add('alert', `alert-${kind}`);
     // Add alert text to element.
-    newAlert.innerText = text;
+    newAlert.innerHTML = `<div class="spinner-border text-${kind}"></div> ` + text + ` <div class="spinner-grow text-${kind}"></div>`;
 
     // Add element to DOM in the alertBox. Now it's shown.
     alertBox.appendChild(newAlert);
