@@ -93,13 +93,16 @@ const showUsersList = () => {
     let database = JSON.parse(localStorage.getItem('bs_users')) || [];
 
     // 3. Loop over database to show every user
-    for (const user of database) {
-
+    for(let i = 0 ; i < database.length ; i++) {
+        const user = database[i];
         usersList.innerHTML += `
         <div class="card" style="width: 18rem;">
+            <div class="card-header">
+                Usuario ${i+1}
+            </div>
           <div class="card-body">
-            <h5 class="card-title">${user.name}</h5>
-            <p class="card-text">${user.email}</p>
+            <h5 class="card-title">Name: ${user.name}</h5>
+            <p class="card-text">Email: ${user.email}</p>
           </div>
         </div>`;
     }
