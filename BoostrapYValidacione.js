@@ -67,7 +67,7 @@ const saveNewUser = (ev) => {
         let user = {
             name: formName.value,
             email: formEmail.value,
-            password: formPassword1.value
+            password: passwordHashInsecure(formPassword1.value)
         }
 
         // 3. Push new user into 'database' array
@@ -96,7 +96,7 @@ const showUsersList = () => {
     for(let i = 0 ; i < database.length ; i++) {
         const user = database[i];
         usersList.innerHTML += `
-        <div class="card" style="width: 18rem;">
+        <div class="card m-3" style="width: 18rem;">
             <div class="card-header">
                 Usuario ${i+1}
             </div>
@@ -261,13 +261,12 @@ const tinySimpleHash = s => {
 
 const getInsecureSalt = () => {
     return Math.random().toString(36).substring(2);
-}
+};
 
-const insecureSaltHash = pass => {
+const passwordHashInsecure = pass => {
     const insecureSalt = getInsecureSalt();
     return insecureSalt + '.' + tinySimpleHash(insecureSalt+pass);
-}
+};
 
 ////////////////////////////////////////////////////////////////////////////////
-// Init
-
+// That's all folks!
