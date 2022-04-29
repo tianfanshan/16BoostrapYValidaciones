@@ -121,7 +121,7 @@ const getFormData = () => {
     const password2 = formPassword2.value;
 
     // Return an object with shorthand propertie names
-    return {name, email, password1, password2};
+    return { name, email, password1, password2 };
 };
 
 
@@ -132,7 +132,7 @@ const getFormData = () => {
  * @param plusDelay Miliseconds of added delay (default 0).
  * @param kind      Kind of message (default 'danger').
  */
-const showAlert = (text, plusDelay=0, kind='danger') => {
+const showAlert = (text, plusDelay = 0, kind = 'danger') => {
 
     // Create new 'div' element for the alert
     const newAlert = document.createElement('div');
@@ -146,7 +146,7 @@ const showAlert = (text, plusDelay=0, kind='danger') => {
     alertBox.appendChild(newAlert);
 
     // Delete after 3 seconds plus added delay
-    setTimeout(()=>{newAlert.remove()}, 3000+plusDelay);
+    setTimeout(() => { newAlert.remove() }, 3000 + plusDelay);
 }
 
 
@@ -194,7 +194,7 @@ const isPasswordValid = (password) => {
 const validateFormData = () => {
 
     // Get four consts from 'getFormData()' using destructuring
-    const {name, email, password1, password2} = getFormData();
+    const { name, email, password1, password2 } = getFormData();
 
     // Prepare an empty array to store potential errors
     let errors = [];
@@ -227,8 +227,8 @@ const validateFormData = () => {
     } else {
         // Show an alert for every error.
         // Delay 2 seconds more every error, to ahve enough time to read it
-        for (let i=0; i<errors.length; i++) {
-            showAlert(errors[i], i*2000);
+        for (let i = 0; i < errors.length; i++) {
+            showAlert(errors[i], i * 2000);
         }
         return false;  // Some errors where found
     }
@@ -243,6 +243,27 @@ navBtnList.addEventListener('click', showList);
 btnNewUser.addEventListener('click', saveNewUser);
 
 
+////////////////////////////////////////////////////////////////////////////////
+// Advanced functions
+// (please, don't worry about this part)
+
+// Tiny Simple Hash
+// by bryc, from https://stackoverflow.com/a/52171480
+const tinySimpleHash = s => {
+    for (var i = 0, h = 9; i < s.length;) {
+        h = Math.imul(h ^ s.charCodeAt(i++), 9 ** 9);
+    }
+    return h ^ h >>> 9
+};
+
+const getInsecureSalt = () => {
+    return Math.random().toString(36).substring(2);
+}
+
+const insecureSaltHash = pass => {
+    const insecureSalt = getInsecureSalt();
+    return insecureSalt + '.' + tinySimpleHash(insecureSalt+pass);
+}
 
 ////////////////////////////////////////////////////////////////////////////////
 // Init
