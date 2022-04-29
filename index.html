@@ -18,12 +18,19 @@
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
         <div class="container">
             <div class="nad-brand text-light">Shan&Xavi</div>
+
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="#" id="nav-btn-form">Create User</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" id="nav-btn-list">Users List</a>
+                </li>
+                <!-- Button to Open the Modal -->
+                <li class="nav-item">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Open modal
+                    </button>
                 </li>
             </ul>
         </div>
@@ -64,7 +71,34 @@
             &copy; Shan&Xavi
         </div>
     </footer>
+
+    <!-- The Modal -->
+    <!-- Taken from https://www.w3schools.com/bootstrap5/bootstrap_modal.php -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Modal body..
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./BoostrapYValidacione.js"></script>
 </body>
-<script src="./BoostrapYValidacione.js"></script>
 
 </html>
