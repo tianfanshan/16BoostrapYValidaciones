@@ -10,6 +10,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // Constants
+//The constants are necessary for the project
 const navBtnForm = document.querySelector('#nav-btn-form');
 const navBtnList = document.querySelector('#nav-btn-list');
 const sectForm = document.querySelector('#form');
@@ -168,6 +169,7 @@ const noneIsEmpty = (txt1, txt2, txt3, txt4) => {
 
 /**
  * Check if the string complies with the regexp expression (is a valid email).
+ * Brakets are not necessary
  * @param email String to check
  * @returns     true or false, if email is valid or not
  */
@@ -229,7 +231,7 @@ const validateFormData = () => {
 
     } else {
         // Show an alert for every error.
-        // Delay 2 seconds more every error, to ahve enough time to read it
+        // Delay 2 seconds more every error, to have enough time to read it
         for (let i = 0; i < errors.length; i++) {
             showAlert(errors[i], i * 2000);
         }
